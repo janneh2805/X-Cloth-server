@@ -58,7 +58,7 @@ app.post("/attendees", (req, resp) => {
 
     const myQuery = {
         text: "INSERT INTO attendees (firstname, lastname, email, phoneno) VALUES ($1, $2, $3, $4)",
-        values: [req.body.firstname, req.body.lastname, req.body.email, req.body.phoneno]
+        values: [req.body.firstname, req.body.lastname, req.body.email, req.body.phonenonode]
     }
 
     client
